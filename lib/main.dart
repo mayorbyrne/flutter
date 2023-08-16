@@ -7,7 +7,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -27,13 +26,16 @@ class MyApp extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(0, 0, 0, 16),
+                  child: Image.asset("assets/images/Kirk_Van_Houten.png"),
+                ),
                 TextButton(
-                    child: Text("About Me"),
+                    child: Text("Hi. I'm Kevin."),
                     onPressed: () => print("hello world")),
               ],
             ),
           )),
-      //MyHomePage(),
     );
   }
 }
